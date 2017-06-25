@@ -1,10 +1,5 @@
 -- Just change solution/project name and project GUID
 
---[[newoption {
-	trigger = "with-bgfx",
-	description = "Enable BGFX sample (need bgfx/bimg/bx repositories next to ImWindow repositorie)",
-}]]
-
 local PROJECT_DIR          = (path.getabsolute("..") .. "/")
 local PROJECT_BUILD_DIR    = path.join(PROJECT_DIR, ".build/")
 local PROJECT_PROJECTS_DIR = path.join(PROJECT_DIR, ".projects")
