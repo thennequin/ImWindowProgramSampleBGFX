@@ -1,0 +1,15 @@
+[submodule "Externals/imgui"]
+	path = Externals/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "Externals/ImWindow"]
+	path = Externals/ImWindow
+	url = https://github.com/thennequin/ImWindow.git
+[submodule "Externals/bgfx"]
+	path = Externals/bgfx
+	url = https://github.com/bkaradzic/bgfx.git
+[submodule "Externals/bx"]
+	path = Externals/bx
+	url = https://github.com/bkaradzic/bx.git
+[submodule "Externals/bimg"]
+	path = Externals/bimg
+	url = https://github.com/bkaradzic/bimg.git
