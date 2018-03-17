@@ -86,9 +86,15 @@ solution "Program"
 							"../Externals/ImWindow/Externals/imgui/SFF_rect_pack.h",
 							"../Externals/ImWindow/Externals/imgui/SFF_textedit.h",
 							"../Externals/ImWindow/Externals/imgui/SFF_truetype.h",
+							
+							"../Externals/ImWindow/Externals/EasyWindow/EasyWindow*.cpp",
+							"../Externals/ImWindow/Externals/EasyWindow/EasyWindow*.h",
 
 							"../Externals/ImWindow/ImWindow/**.cpp",
 							"../Externals/ImWindow/ImWindow/**.h",
+
+							"../Externals/ImWindow/ImWindowEasyWindow/**.cpp",
+							"../Externals/ImWindow/ImWindowEasyWindow/**.h",
 
 							"../Externals/ImWindow/ImWindowBGFX/EasyWindow*.cpp",
 							"../Externals/ImWindow/ImWindowBGFX/EasyWindow.h",
@@ -98,13 +104,17 @@ solution "Program"
 		
 		vpaths {
 							["ImGui"] = "../Externals/ImWindow/Externals/imgui/**",
+							["EasyWindow"] = "../Externals/ImWindow/Externals/EasyWindow/**",
 							["ImWindow"] = "../Externals/ImWindow/ImWindow/**",
+							["ImWindowEasyWindow"] = "../Externals/ImWindow/ImWindowEasyWindow/**",
 							["ImWindowBGFX"] = "../Externals/ImWindow/ImWindowBGFX/**"
 		}
 		
 		includedirs {
 							"../Externals/ImWindow/Externals/imgui",
+							"../Externals/ImWindow/Externals/EasyWindow",
 							"../Externals/ImWindow/ImWindow",
+							"../Externals/ImWindow/ImWindowEasyWindow",
 							"../Externals/ImWindow/ImWindowBGFX",
 							"../src/",
 
