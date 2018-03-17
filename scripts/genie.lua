@@ -78,14 +78,14 @@ solution "Program"
 							"../src/**.cpp",
 							"../src/**.h",
 
-							"../Externals/imgui/imconfig.h",
-							"../Externals/imgui/imgui.h",
-							"../Externals/imgui/imgui_internal.h",
-							"../Externals/imgui/imgui.cpp",
-							"../Externals/imgui/imgui_draw.cpp",
-							"../Externals/imgui/SFF_rect_pack.h",
-							"../Externals/imgui/SFF_textedit.h",
-							"../Externals/imgui/SFF_truetype.h",
+							"../Externals/ImWindow/Externals/imgui/imconfig.h",
+							"../Externals/ImWindow/Externals/imgui/imgui.h",
+							"../Externals/ImWindow/Externals/imgui/imgui_internal.h",
+							"../Externals/ImWindow/Externals/imgui/imgui.cpp",
+							"../Externals/ImWindow/Externals/imgui/imgui_draw.cpp",
+							"../Externals/ImWindow/Externals/imgui/SFF_rect_pack.h",
+							"../Externals/ImWindow/Externals/imgui/SFF_textedit.h",
+							"../Externals/ImWindow/Externals/imgui/SFF_truetype.h",
 
 							"../Externals/ImWindow/ImWindow/**.cpp",
 							"../Externals/ImWindow/ImWindow/**.h",
@@ -97,13 +97,13 @@ solution "Program"
 		}
 		
 		vpaths {
-							["ImGui"] = "../Externals/imgui/**",
+							["ImGui"] = "../Externals/ImWindow/Externals/imgui/**",
 							["ImWindow"] = "../Externals/ImWindow/ImWindow/**",
 							["ImWindowBGFX"] = "../Externals/ImWindow/ImWindowBGFX/**"
 		}
 		
 		includedirs {
-							"../Externals/imgui",
+							"../Externals/ImWindow/Externals/imgui",
 							"../Externals/ImWindow/ImWindow",
 							"../Externals/ImWindow/ImWindowBGFX",
 							"../src/",
