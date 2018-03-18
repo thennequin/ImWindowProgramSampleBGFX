@@ -1,6 +1,8 @@
 
 #include "Program.h"
 
+#include "ShortKeyManager.h"
+
 #include "Windows/SampleWindow.h"
 
 Program* Program::s_pInstance = NULL;
@@ -20,11 +22,14 @@ Program::Program()
 	style.Colors[ImGuiCol_ChildWindowBg] = ImVec4(0.204f, 0.204f, 0.204f, 1.f);
 	style.Colors[ImGuiCol_MenuBarBg] = style.Colors[ImGuiCol_WindowBg];
 
+	m_pShortKeyManager = new ShortKeyManager();
+
 	new SampleWindow();
 }
 
 Program::~Program()
 {
+	ImwSafeDelete(m_pShortKeyManager);
 }
 
 Program* Program::CreateInstance()
@@ -47,6 +52,7 @@ void Program::DestroyInstance()
 
 bool Program::Run()
 {
+	m_pShortKeyManager->Manage(false);
 	return m_bRun && m_oMgr.Run(false) && m_oMgr.Run(true);
 }
 

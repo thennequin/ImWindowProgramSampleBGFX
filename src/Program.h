@@ -4,6 +4,8 @@
 
 #include "ImwWindowManagerBGFX.h"
 
+class ShortKeyManager;
+
 class Program
 {
 	Program();
@@ -25,6 +27,8 @@ protected:
 	bool									m_bRun;
 
 	ImWindow::ImwWindowManagerBGFX			m_oMgr;
+
+	ShortKeyManager*						m_pShortKeyManager;
 };
 
 #endif // __PROGRAM_H__²
